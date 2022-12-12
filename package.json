@@ -1,0 +1,12 @@
+{
+  "name": "vue3-notify",
+  "version": "0.1.0",
+  "description": "VueJs 3 notify with notification api",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mkay-development/vue3-notify.git"
+  },
+  "author": "Jonathan Martz",
+  "license": "MIT"
+}

@@ -1,17 +1,19 @@
 const Vue3Notify = {
     install: (app, options) => {
-        app.provide('notify',{
-            add: function(title,message){
+        app.provide('notify', {
+            add: function (title, message, icon) {
                 Notification.requestPermission().then((result) => {
                     if (result == "granted") {
-                      const icon = "assets/logo.png";
-                
-                      const notification = new Notification(title, {
-                        body: message,
-                        icon: icon
-                      });
+                        const notification = new Notification(title, {
+                            body: message,
+                            icon: icon
+                        });
+
+                        notification.addEventListener('click', () => {
+                            console.log('test');
+                          });
                     }
-                  });
+                });
             }
         });
     }

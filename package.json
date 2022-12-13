@@ -1,6 +1,6 @@
 {
-  "name": "vue3-notify",
-  "version": "0.1.0",
+  "name": "@jonathan-martz/vue3-notify",
+  "version": "0.1.3",
   "description": "VueJs 3 notify with notification api",
   "main": "index.js",
   "repository": {
